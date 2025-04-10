@@ -1,0 +1,182 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%------------------------------------------------------------------------------
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Carson Fouts} \\ \vspace{1pt}
+    \small (336) 471-7603 $|$ \href{mailto:foutscm@appstate.edu}{\underline{foutscm@appstate.edu}} $|$ 
+    \href{https://linkedin.com/in/carsonfouts}{\underline{linkedin.com/in/carsonfouts}}
+    $|$ 
+    \href{https://github.com/Fouts-C}{\underline{github.com/Fouts-C}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Appalachian State University}{Aug. 2023 -- May 2027}
+      {B.S. Computer Science (Expected May 2027) $|$ \textbf{GPA}: 3.6}
+      {Boone, NC}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Courses}: Computer Science I \& II, Database, Software Engineering, Statistical Data Analysis, Intro to Computer Systems, \& Theoretical Computer Science}
+        \resumeItem{\textbf{Honors}: Dean's List}
+        \resumeItem{Named an \textbf{ECRS High Achievers Scholar} (2023), a highly selective departmental scholarship awarded to the top 0.01\% of incoming students based on academic excellence and leadership potential}
+        \resumeItem{Conducted \textbf{year-long group research projects} as part of the ECRS Program, collaborating with peers to explore advanced topics in Computer Science}
+        \resumeItem{Selected as an \textbf{ECRS Team Leader} (2025) for outstanding academic performance, mentorship, and dedication to research and community in the Computer Science department}
+        \resumeItem{Recipient of the \textbf{Phil Harrell Computer Science Scholarship} for academic merit and contributions to the CS community}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%----------- TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item[] \textbf{Programming Languages:} Java, Python, C, R, SQL, Assembly
+    \item[] \textbf{Web Development:} HTML, CSS
+    \item[] \textbf{Libraries/Tools:} Git, Pandas, Matplotlib, NumPy, Machine Learning (Tensorflow, Scikit-Learn), LaTeX
+\end{itemize}
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Assistant Manager}}{May 2023 -- Jan. 2025}
+      {Biscuitville}{High Point, NC}
+      \resumeItemListStart
+        \resumeItem{Climbed from Crew Member to Assistant Manager through consistent performance, leadership, and dedication to guest service and operational excellence}
+        \resumeItem{Supported recruiting, managing inventory, and developing a high-performing team of around 20 employees to deliver exceptional guest service and maintain a positive team culture}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+    
+ % -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading for promotions/multiple levels of the same position under the same company
+%-------------------------------------------     
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart         
+
+    \resumeProjectHeading
+      {\textbf{Spotify Visualizer} $|$ \emph{ECRS Research Program}}{Fall 2023}
+      \resumeItemListStart
+        \resumeItem{Worked with a team of ECRS Scholars to develop a dynamic tool that visualizes the features of Spotify playlists and albums using radar charts}
+        \resumeItem{Integrated the \textbf{Spotify Web API} to extract audio features such as popularity, danceability, loudness, valence, and energy for each track}
+        \resumeItem{Used \textbf{Python}, \textbf{Spotipy}, and \textbf{Matplotlib} to generate interactive, color-coded radar plots for audio feature comparison across tracks; learned to use \textbf{Git} and \textbf{.gitignore} to securely manage API credentials when uploading to GitHub}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{PyGame Platformer} $|$ \emph{ECRS Research Program}}{Spring 2024}
+      \resumeItemListStart
+        \resumeItem{Worked in a team of ECRS Scholars to develop a modular 2D platformer game using \textbf{Python} and \textbf{PyGame}, implementing game mechanics inspired by classic Mario-style gameplay}
+        \resumeItem{Applied \textbf{object-oriented programming principles} to structure core game elements like player physics, collision detection, enemies, power-ups, and level design}
+        \resumeItem{Built an interactive experience with features including animated sprites, sound effects, customizable player skins, gravity flipping, and a multi-level progression system}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{STEM Machine Learning Research} $|$ \emph{ECRS Research Program}}{Fall 2024}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a research team to design and implement multiple \textbf{machine learning models} focused on real-world classification tasks, including mushroom image recognition and spam URL detection}
+        \resumeItem{Utilized \textbf{Python}, \textbf{pandas}, \textbf{scikit-learn}, and \textbf{TF-IDF} for preprocessing, feature extraction, and training \textbf{logistic regression} classifiers with accuracy tracking and confusion matrix visualization}
+        \resumeItem{Worked with datasets involving both structured and unstructured data, implemented \textbf{image preprocessing pipelines}, and automated evaluation with custom metrics and plotting tools}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+    
+
+%-----------LEADERSHIP-----------
+%-------------------------------------------
+\end{document}
