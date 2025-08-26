@@ -13,19 +13,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -91,10 +78,11 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-%------------------------------------------------------------------------------
-%-------------------------------------------
+
+%-------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Carson Fouts} \\ \vspace{1pt}
@@ -112,39 +100,45 @@
       {B.S. Computer Science (Expected May 2027) $|$ \textbf{GPA}: 3.6}
       {Boone, NC}
       \resumeItemListStart
-        \resumeItem{\textbf{Relevant Courses}: Computer Science I \& II, Database, Software Engineering, Statistical Data Analysis, Intro to Computer Systems, \& Theoretical Computer Science}
+        \resumeItem{\textbf{Relevant Courses}: Computer Science I \& II, Database, Data Structures, Software Engineering, Statistical Data Analysis, Computer Systems, \& Theoretical CS}
         \resumeItem{\textbf{Honors}: Dean's List}
-        \resumeItem{Named an \textbf{ECRS Software Corporation High Achievers Scholar} (2023), a highly selective departmental scholarship awarded to the top 0.01\% of incoming students based on academic excellence and leadership potential}
-        \resumeItem{Conducted \textbf{year-long group research projects} as part of the ECRS Program, collaborating with peers to explore advanced topics in Computer Science}
-        \resumeItem{Selected as an \textbf{ECRS Team Leader} (2025) for outstanding academic performance, mentorship, and dedication to research and community in the Computer Science department}
-        \resumeItem{Recipient of the \textbf{Phil Harrell Computer Science Scholarship} for academic merit and contributions to the CS community}
-        
+        \resumeItem{Named an \textbf{ECR Software Corporation High Achievers Scholar} (2023; top 0.01\% of incoming students); completed \textbf{year-long group research projects} on advanced CS topics in collaboration with peers; later selected as an \textbf{ECRS Team Leader} (2025) for academic excellence, mentorship, and prior research success}
+        \resumeItem{Recipient of the \textbf{Phil Harrell Computer Science Scholarship} for academic merit and CS leadership}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-  
+
 %----------- TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-    \item[] \textbf{Programming Languages:} Java, Python, C, R, SQL, Assembly
-    \item[] \textbf{Web Development:} HTML, CSS
-    \item[] \textbf{Libraries/Tools:} Git, Pandas, Matplotlib, NumPy, Machine Learning (Tensorflow, Scikit-Learn), LaTeX
+  \item[] \textbf{Languages:} TypeScript, Java, Python, SQL, C, C++, R, Assembly
+  \item[] \textbf{Frontend:} React, Next.js, Tailwind CSS, Shadcn/UI
+  \item[] \textbf{Backend:} tRPC, Prisma, Drizzle, PostgreSQL, REST APIs, Google Cloud Platform, AWS
+  \item[] \textbf{Dev Tools:} Git/GitHub, Vercel, Docker, Cursor, Doppler, LaTeX, Notion, Slack
+  \item[] \textbf{Other:} AI \& ML Engineering, QA Testing, Figma Design, Technical Writing, Client \& Team Communication
 \end{itemize}
- 
+
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+  {\textbf{Full Stack Software Engineer Intern}}{May 2025 -- Aug. 2025}
+  {Mountain Dev}{Boone, NC}
+  \resumeItemListStart
+    \resumeItem{Engineered scalable, client-facing applications across the full \textbf{T3 Turbo Stack} (React, TypeScript, tRPC, Next.js, Tailwind, Prisma, PostgreSQL), translating business requirements into production-ready software.}
+    \resumeItem{Contributed extensively to \textbf{Sandlot} (Sandlot.fit), the official fitness app of \textbf{GORUCK}, supporting \textbf{1,000+ active daily events \& tens of thousands of annual users worldwide}; fixed time zone and notification bugs, improved scroll logic, added animations, built an account recovery email system, and developed admin tooling.}
+    \resumeItem{Engineered major features for \textbf{FranchiSEO}, a large-scale SEO platform serving 100+ businesses and powering \textbf{10M+ SERP scans across the U.S.}; implemented ARP/ARTP calculations with database triggers, designed scalable data pipelines and backfill scripts to process millions of historical scans, and optimized scan filtering/sorting for thousands of results. Refactored the client-facing map UX (praised by stakeholders) and built a migration solution to import millions of legacy scans and node data into a new database schema, ensuring long-term scalability and cost efficiency.}
+    \resumeItem{Organized and expanded Mountain Dev’s company monorepo and marketing website by implementing new features and pages, reusing proven code patterns, and integrating forward-looking development practices discussed in team design sessions.}
+  \resumeItemListEnd
+
     \resumeSubheading
       {\textbf{Assistant Manager}}{May 2023 -- Jan. 2025}
       {Biscuitville}{High Point, NC}
       \resumeItemListStart
-        \resumeItem{Climbed from Crew Member to Assistant Manager through consistent performance, leadership, and dedication to guest service and operational excellence}
-        \resumeItem{Supported recruiting, managing inventory, and developing a high-performing team of around 20 employees to deliver exceptional guest service and maintain a positive team culture}
+        \resumeItem{Promoted from Crew Member to Assistant Manager; led a 20-person team, managed inventory, and supported recruitment.}
       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
-    
- % -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading for promotions/multiple levels of the same position under the same company
-%-------------------------------------------     
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -155,28 +149,9 @@
       \resumeItemListStart
         \resumeItem{Worked with a team of ECRS Scholars to develop a dynamic tool that visualizes the features of Spotify playlists and albums using radar charts}
         \resumeItem{Integrated the \textbf{Spotify Web API} to extract audio features such as popularity, danceability, loudness, valence, and energy for each track}
-        \resumeItem{Used \textbf{Python}, \textbf{Spotipy}, and \textbf{Matplotlib} to generate interactive, color-coded radar plots for audio feature comparison across tracks; learned to use \textbf{Git} and \textbf{.gitignore} to securely manage API credentials when uploading to GitHub}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{PyGame Platformer} $|$ \emph{ECRS Research Program}}{Spring 2024}
-      \resumeItemListStart
-        \resumeItem{Worked in a team of ECRS Scholars to develop a modular 2D platformer game using \textbf{Python} and \textbf{PyGame}, implementing game mechanics inspired by classic Mario-style gameplay}
-        \resumeItem{Applied \textbf{object-oriented programming principles} to structure core game elements like player physics, collision detection, enemies, power-ups, and level design}
-        \resumeItem{Built an interactive experience with features including animated sprites, sound effects, customizable player skins, gravity flipping, and a multi-level progression system}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{STEM Machine Learning Research} $|$ \emph{ECRS Research Program}}{Fall 2024}
-      \resumeItemListStart
-        \resumeItem{Collaborated with a research team to design and implement multiple \textbf{machine learning models} focused on real-world classification tasks, including mushroom image recognition and spam URL detection}
-        \resumeItem{Utilized \textbf{Python}, \textbf{pandas}, \textbf{scikit-learn}, and \textbf{TF-IDF} for preprocessing, feature extraction, and training \textbf{logistic regression} classifiers with accuracy tracking and confusion matrix visualization}
-        \resumeItem{Worked with datasets involving both structured and unstructured data, implemented \textbf{image preprocessing pipelines}, and automated evaluation with custom metrics and plotting tools}
+        \resumeItem{Generated interactive radar charts with \textbf{Python}, \textbf{Spotipy}, and \textbf{Matplotlib} to visualize audio feature trends across tracks}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-    
 
-%-----------LEADERSHIP-----------
-%-------------------------------------------
 \end{document}
